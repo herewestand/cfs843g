@@ -1,6 +1,6 @@
 # cfs843g
 
-Employee Survey Sample App
+Employee Survey Workplace Sample App, Pulled from https://github.com/fbsamples/workplace-platform-samples 
 
 This example shows how you can use quick replies to send a lightweight employee survey to an employee. 
 
