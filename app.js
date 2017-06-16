@@ -14,7 +14,9 @@ const
 	bodyParser = require('body-parser'),
 	crypto = require('crypto'),
 	express = require('express'),
-	request = require('request');
+	request = require('request'),
+	cfenv = require('cfenv');
+
 
 var app = express();
 app.set('port', process.env.PORT || 5000);
@@ -30,6 +32,11 @@ app.use(express.static('public'));
  *
  */
 const
+	//APP_SECRET = '130dd710db67c2967da0245c212d8a6f',
+	//VERIFY_TOKEN = 't6gE8YExG',
+	//ACCESS_TOKEN = 'DQVJ2cnk3OE1pamszb21MeGtWeHo5ZAkg3T0tuZA0F1aGFmOGlkS0xSWWlLMllqbDBHQnB1SHI3V0dYcXh5XzJtWVlzVldwa3BnTmhWcWJmUVZA6czJfeVNKTG1lYS1zczl3bzhSd2VMbWgzU3V3cnlVdlpQeVgxVU5xX2lmaW90ZA21acURiQnREWjV3X19nX1g2RkdlS0t6NUhrWXFtN1dDY3dXcmZAwcmQ4SDZAQbFBXVmN5XzRXRENrWEtxTElfQ3ZAFUUlqVXFLenI2bGtsYXp1aAZDZD',
+	//SERVER_URL = ('https://www.facebook.com/company/1665073796842453/scim/');
+	
 	APP_SECRET = process.env.APP_SECRET,
 	VERIFY_TOKEN = process.env.VERIFY_TOKEN,
 	ACCESS_TOKEN = process.env.ACCESS_TOKEN,
